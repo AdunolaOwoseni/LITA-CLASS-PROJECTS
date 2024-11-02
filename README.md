@@ -9,4 +9,14 @@ performance, and monthly sales trends. The goal is to produce an interactive Pow
 dashboard that highlights these findings.
 
 ## Data Source
-Importing a CSV file into an SQL database from WPS Office involves several steps, including exporting your data from WPS as a CSV file and then using SQL commands to import that data into your database. Here’s how to do it step by step
+The primary source of data used here is Data Sal.esv and this is an open source data that can be freely downloaded from an open source such as kaggle or FRED or any data repository site.
+
+## Tools Used
+- Microsoft Excel [Download Here](https://www.google.com/search?q=download+microsoft+excel+2021+free&oq=download+microsoft+excel&gs_lcrp=EgZjaHJvbWUqBwgDEAAYgAQyDAgAEEUYORixAxiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCTE4OTczajBqN6gCCLACAQ&sourceid=chrome&ie=UTF-8)
+  1. For Data cleaning
+  2. For Analysis
+  3. For Data Visualization
+     
+- SQL Server (for querying and analysis)     
+- Power BI
+- Github for POrtfolio building
