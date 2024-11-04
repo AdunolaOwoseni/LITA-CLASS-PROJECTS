@@ -4,13 +4,13 @@ Location of projects done during LITA class.
 
 [Project overview](#project-overview)
 
-Data Source
+[Data Source](#data-source)
 
-Tools Used
+[Tools Used](#tools-used)
 
-Exploratory Data Analysis
+[Exploratory Data Analysis](#exploratory-data-analysis)
 
-Data Analysis
+[Data Analysis](#data-analysis)
 
 Data Visualiziation
 
