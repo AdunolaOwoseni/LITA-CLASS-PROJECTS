@@ -2,6 +2,18 @@
 ---
 Location of projects done during LITA class.
 
+[Project overview](#project-overview)
+
+Data Source
+
+Tools Used
+
+Exploratory Data Analysis
+
+Data Analysis
+
+Data Visualiziation
+
 ## Project overview
 ---
 This Data Analysis project aims to analyze the sales performance of a retail store. 
@@ -38,3 +50,6 @@ The primary source of data used here is Data Sal.esv and this is an open source 
   ```SQL
   SELECT *FROM TABLE1
   WHERE CONDITION = TRUE
+
+## Data Visualiziation
+
