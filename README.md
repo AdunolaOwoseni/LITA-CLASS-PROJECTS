@@ -12,7 +12,7 @@ Location of projects done during LITA class.
 
 [Data Analysis](#data-analysis)
 
-Data Visualiziation
+[Data Visualiziation](#data-visualization)
 
 ## Project overview
 ---
