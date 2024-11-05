@@ -1,4 +1,4 @@
-# LITA-CLASS-PROJECT
+# LITA-CLASS-PROJECT 1
 ---
 Location of projects done during LITA class.
 
@@ -80,3 +80,9 @@ Using the Dashboard
 
 Screenshots
 See the /Documentation/Dashboard_Screenshots folder for annotated screenshots of each dashboard element.
+
+![image](https://github.com/user-attachments/assets/fbc046a2-d175-49c1-bb8f-4c5b0290e7dd)
+![image](https://github.com/user-attachments/assets/fcbce09c-c7a2-4d19-818d-a657d8d7e0c2)
+![image](https://github.com/user-attachments/assets/2b93ee11-ed60-4083-86a6-6a6642c13858)
+
+
