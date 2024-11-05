@@ -16,40 +16,67 @@ Location of projects done during LITA class.
 
 ## Project overview
 ---
-This Data Analysis project aims to analyze the sales performance of a retail store. 
-By exploring sales data to uncover key insights such as top-selling products, regional 
-performance, and monthly sales trends. The goal is to produce an interactive Power BI 
-dashboard that highlights these findings.
+This project analyzes customer subscription data to uncover behavioral patterns, track subscription types, and identify trends in cancellations and renewals. The objective is to support business decision-making by visualizing these insights in a Power BI dashboard.
 
 ## Data Source
 ---
-The primary source of data used here is Data Sal.esv and this is an open source data that can be freely downloaded from an open source such as kaggle or FRED or any data repository site.
+For this project, the dataset is a mock customer subscription dataset, representing a typical subscription service with details about customer subscriptions, regions, subscription types, start dates, end dates, and revenu
 
-## Tools Used
----
-- Microsoft Excel [Download Here](https://www.google.com/search?q=download+microsoft+excel+2021+free&oq=download+microsoft+excel&gs_lcrp=EgZjaHJvbWUqBwgDEAAYgAQyDAgAEEUYORixAxiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCTE4OTczajBqN6gCCLACAQ&sourceid=chrome&ie=UTF-8)
-  1. For Data cleaning
-  2. For Analysis
-  3. For Data Visualization
-     
-- SQL Server (for querying and analysis)     
-- Power BI
-- Github for POrtfolio building
+## Data Cleaning and Exploration
+## In Excel:
 
-  ## Exploratory Data Analysis
----
-  EDA involved the exploring of the data to answer some questions about the data such as;
+1. Remove Duplicates: Ensured no duplicate sales records exist.
 
-  - What are the products on peak sales
-  - What is the overall sales trend
-  - Which products are the top sellers
- 
-  ## Data Analysis
-  ---
-  This is where we include some basisc lines of code or queries or even spme of the DAX expressions used during your analysis;
-  ```SQL
-  SELECT *FROM TABLE1
-  WHERE CONDITION = TRUE
+2. Handle Missing Values: Removed rows with critical missing information in fields like ProductID, Region, or SalesAmount.
+3.Formatting Adjustments: Formatted Date columns as dates and SalesAmount as currency for accurate calculations.
+Using pivot tables, we calculated:
 
-## Data Visualiziation
+4. Total Sales by Product: Identified the best-selling products.
+5. Total Revenue by Region: Evaluated regional performance.
+6. Monthly Sales Trends: Analyzed sales patterns over time.
 
+## SQL Queries and Key Insights
+Loaded the dataset into SQL Server to run the following queries:
+
+Example Queries
+
+Total Sales for Each Product Category:
+
+sql
+Copy code
+SELECT ProductCategory, SUM(SalesAmount) AS TotalSales
+FROM Sales
+GROUP BY ProductCategory;
+
+Monthly Sales Totals for Current Year:
+sql
+
+Copy code
+SELECT MONTH(SaleDate) AS Month, SUM(SalesAmount) AS MonthlySales
+FROM Sales
+WHERE YEAR(SaleDate) = YEAR(GETDATE())
+GROUP BY MONTH(SaleDate)
+ORDER BY Month;
+Key Insights
+Top-Selling Products: Product A, B, and C are the highest-selling products.
+Regional Sales Contribution: Region X, Y, and Z contribute significantly to total sales.
+Seasonal Trends: Sales peak in specific months, indicating seasonal trends.
+(See Insights.md for more details.)
+
+## Power BI Dashboard
+The Power BI dashboard includes the following visuals:
+1 Sales Overview: KPI cards displaying Total Sales, Total Transactions, and Average Sales per Product.
+
+2 Top Products: A bar chart showcasing top-selling products by sales value.
+
+4 Monthly Sales Trends: A line chart tracking sales month by month.
+Using the Dashboard
+
+5 Filtering: Use slicers for Region, Month, and Product Category.
+
+6 Cross-Filtering: Click on visuals (e.g., regions on the map) to dynamically filter related visuals.
+
+7 Using Insights: Identify high-performing regions, seasonal peaks, and product demand.
+
+Screenshots
+See the /Documentation/Dashboard_Screenshots folder for annotated screenshots of each dashboard element.
